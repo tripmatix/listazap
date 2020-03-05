@@ -1,0 +1,6 @@
+framework module Pods_ListaZap {
+  umbrella header "Pods-ListaZap-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,13 @@
 		3DD9D0382404C6210003B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD9D0372404C6210003B11D /* Assets.xcassets */; };
 		3DD9D03B2404C6210003B11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD9D0392404C6210003B11D /* LaunchScreen.storyboard */; };
 		3DD9D0462404C6210003B11D /* ListaZapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9D0452404C6210003B11D /* ListaZapTests.swift */; };
+		3DD9D0542404C6ED0003B11D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9D0532404C6ED0003B11D /* ApiClient.swift */; };
+		3DFAB84224080C3D00262B8C /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB84124080C3D00262B8C /* ErrorResponse.swift */; };
+		3DFAB84624080CE700262B8C /* StatementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB84524080CE700262B8C /* StatementResponse.swift */; };
+		3DFAB848240813BA00262B8C /* StatementsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB847240813BA00262B8C /* StatementsWorker.swift */; };
+		3DFAB84A240854A800262B8C /* StatementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAB849240854A800262B8C /* StatementsInteractor.swift */; };
+		87C0B4CEC49A09BF67E2C2D3 /* Pods_ListaZap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C01F16448BCCDC7C3E0BC2 /* Pods_ListaZap.framework */; };
+		AA294009A65A49CD29D334F9 /* Pods_ListaZapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C007246DEF32550FF521EBA9 /* Pods_ListaZapTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E19F78811B5C71863AFDEBE /* Pods-ListaZap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaZap.debug.xcconfig"; path = "Target Support Files/Pods-ListaZap/Pods-ListaZap.debug.xcconfig"; sourceTree = "<group>"; };
+		346B9D42BFDF8C9688CB4489 /* Pods-ListaZapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaZapTests.release.xcconfig"; path = "Target Support Files/Pods-ListaZapTests/Pods-ListaZapTests.release.xcconfig"; sourceTree = "<group>"; };
 		3DD9D02B2404C61F0003B11D /* ListaZap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListaZap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD9D02E2404C61F0003B11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD9D0302404C61F0003B11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +47,15 @@
 		3DD9D0412404C6210003B11D /* ListaZapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListaZapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD9D0452404C6210003B11D /* ListaZapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaZapTests.swift; sourceTree = "<group>"; };
 		3DD9D0472404C6210003B11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD9D0532404C6ED0003B11D /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		3DFAB84124080C3D00262B8C /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		3DFAB84524080CE700262B8C /* StatementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementResponse.swift; sourceTree = "<group>"; };
+		3DFAB847240813BA00262B8C /* StatementsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsWorker.swift; sourceTree = "<group>"; };
+		3DFAB849240854A800262B8C /* StatementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsInteractor.swift; sourceTree = "<group>"; };
+		665D32C5B7FFAC8B502CA207 /* Pods-ListaZap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaZap.release.xcconfig"; path = "Target Support Files/Pods-ListaZap/Pods-ListaZap.release.xcconfig"; sourceTree = "<group>"; };
+		78C2FA0FEF8192034573E882 /* Pods-ListaZapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListaZapTests.debug.xcconfig"; path = "Target Support Files/Pods-ListaZapTests/Pods-ListaZapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C007246DEF32550FF521EBA9 /* Pods_ListaZapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaZapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C01F16448BCCDC7C3E0BC2 /* Pods_ListaZap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListaZap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C0B4CEC49A09BF67E2C2D3 /* Pods_ListaZap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +71,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA294009A65A49CD29D334F9 /* Pods_ListaZapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184446214D1282BFFC1D6AEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9C01F16448BCCDC7C3E0BC2 /* Pods_ListaZap.framework */,
+				C007246DEF32550FF521EBA9 /* Pods_ListaZapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3DD9D0222404C61E0003B11D = {
 			isa = PBXGroup;
 			children = (
 				3DD9D02D2404C61F0003B11D /* ListaZap */,
 				3DD9D0442404C6210003B11D /* ListaZapTests */,
 				3DD9D02C2404C61F0003B11D /* Products */,
+				DEB170E4173CF0619765EBDC /* Pods */,
+				184446214D1282BFFC1D6AEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +110,11 @@
 		3DD9D02D2404C61F0003B11D /* ListaZap */ = {
 			isa = PBXGroup;
 			children = (
+				3DD9D0502404C62D0003B11D /* Model */,
+				3DD9D0522404C6470003B11D /* Controller */,
+				3DD9D0512404C6420003B11D /* View */,
 				3DD9D02E2404C61F0003B11D /* AppDelegate.swift */,
 				3DD9D0302404C61F0003B11D /* SceneDelegate.swift */,
-				3DD9D0322404C61F0003B11D /* ViewController.swift */,
 				3DD9D0342404C61F0003B11D /* Main.storyboard */,
 				3DD9D0372404C6210003B11D /* Assets.xcassets */,
 				3DD9D0392404C6210003B11D /* LaunchScreen.storyboard */,
@@ -99,6 +132,44 @@
 			path = ListaZapTests;
 			sourceTree = "<group>";
 		};
+		3DD9D0502404C62D0003B11D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DD9D0532404C6ED0003B11D /* ApiClient.swift */,
+				3DFAB84524080CE700262B8C /* StatementResponse.swift */,
+				3DFAB84124080C3D00262B8C /* ErrorResponse.swift */,
+				3DFAB847240813BA00262B8C /* StatementsWorker.swift */,
+				3DFAB849240854A800262B8C /* StatementsInteractor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DD9D0512404C6420003B11D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DD9D0522404C6470003B11D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DD9D0322404C61F0003B11D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DEB170E4173CF0619765EBDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E19F78811B5C71863AFDEBE /* Pods-ListaZap.debug.xcconfig */,
+				665D32C5B7FFAC8B502CA207 /* Pods-ListaZap.release.xcconfig */,
+				78C2FA0FEF8192034573E882 /* Pods-ListaZapTests.debug.xcconfig */,
+				346B9D42BFDF8C9688CB4489 /* Pods-ListaZapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DD9D04A2404C6210003B11D /* Build configuration list for PBXNativeTarget "ListaZap" */;
 			buildPhases = (
+				BD0D4419402D12D0C7859548 /* [CP] Check Pods Manifest.lock */,
 				3DD9D0272404C61E0003B11D /* Sources */,
 				3DD9D0282404C61E0003B11D /* Frameworks */,
 				3DD9D0292404C61E0003B11D /* Resources */,
+				50FA3474DE95C8BCF5A1872C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DD9D04D2404C6210003B11D /* Build configuration list for PBXNativeTarget "ListaZapTests" */;
 			buildPhases = (
+				E1ABE088C41E8D677354CAD7 /* [CP] Check Pods Manifest.lock */,
 				3DD9D03D2404C6210003B11D /* Sources */,
 				3DD9D03E2404C6210003B11D /* Frameworks */,
 				3DD9D03F2404C6210003B11D /* Resources */,
@@ -195,14 +269,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50FA3474DE95C8BCF5A1872C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListaZap/Pods-ListaZap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListaZap/Pods-ListaZap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListaZap/Pods-ListaZap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD0D4419402D12D0C7859548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListaZap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1ABE088C41E8D677354CAD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListaZapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3DD9D0272404C61E0003B11D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DFAB84A240854A800262B8C /* StatementsInteractor.swift in Sources */,
+				3DFAB848240813BA00262B8C /* StatementsWorker.swift in Sources */,
 				3DD9D0332404C61F0003B11D /* ViewController.swift in Sources */,
 				3DD9D02F2404C61F0003B11D /* AppDelegate.swift in Sources */,
+				3DFAB84624080CE700262B8C /* StatementResponse.swift in Sources */,
+				3DFAB84224080C3D00262B8C /* ErrorResponse.swift in Sources */,
 				3DD9D0312404C61F0003B11D /* SceneDelegate.swift in Sources */,
+				3DD9D0542404C6ED0003B11D /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +503,7 @@
 		};
 		3DD9D04B2404C6210003B11D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E19F78811B5C71863AFDEBE /* Pods-ListaZap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +522,7 @@
 		};
 		3DD9D04C2404C6210003B11D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 665D32C5B7FFAC8B502CA207 /* Pods-ListaZap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +541,7 @@
 		};
 		3DD9D04E2404C6210003B11D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C2FA0FEF8192034573E882 /* Pods-ListaZapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +564,7 @@
 		};
 		3DD9D04F2404C6210003B11D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346B9D42BFDF8C9688CB4489 /* Pods-ListaZapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
