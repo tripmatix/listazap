@@ -22,7 +22,7 @@ class StatementsInteractor: StatementsBusinessLogic {
     }
     
     func get(){
-        print("git")
+        print("git2")
         worker?.get({ StatementList in
             self.lista = StatementList
             print("lista: \(StatementList)")
