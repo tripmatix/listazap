@@ -44,7 +44,6 @@ class ApiManager: ApiClient {
                     print("sucess1")
                     let parsedJson = try JSONDecoder().decode(T.self, from: response.data!)
                     onSuccess(parsedJson)
-                    
                 } catch let error {
                     print("error1 \(error)")
                     onError(error)

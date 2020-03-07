@@ -9,45 +9,29 @@
 import UIKit
 import Alamofire
 
-protocol ViewControllerDisplay {
-    func displayStatements(lista: [StatementList])
-}
 
-//class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-class ViewController: UIViewController, ViewControllerDisplay, UITableViewDataSource {
-
-    
-    var interactor: StatementsBusinessLogic?
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tblData: UITableView!
     
-    var worker: StatementsWorkerProtocol?
+    var lista: [StatementList] = []
     
-    var lista: [StatementList]?
+    let repository = StatementsRepository()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
-    }
-    
-    private func setup() {
-        print("inicio setup")
-        let vc = self
-        let interactor = StatementsInteractor()
-        vc.interactor = interactor
-        interactor.get()
-        print("fim setup")
         
-    }
-    
-    func displayStatements(lista: [StatementList]) {
-        print("print1 \(lista)")
-        self.lista = lista
+        repository.getStatements(onSuccess: { statements  in
+            self.lista = statements
+            self.tblData?.reloadData()
+        }) { error in
+            print(error)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("print2 \(lista)")
-        return lista!.count
+        return lista.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,9 +40,8 @@ class ViewController: UIViewController, ViewControllerDisplay, UITableViewDataSo
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        cell.textLabel?.text = self.lista![indexPath.row]
-        
+        let item = lista[indexPath.row]
+        cell.textLabel?.text = item.title
         return cell
     }
     

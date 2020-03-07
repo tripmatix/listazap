@@ -16,20 +16,16 @@ class StatementsInteractor: StatementsBusinessLogic {
     
     var view: ViewControllerDisplay?
     
-    var lista: [StatementList]?
+    var worker: StatementsWorkerProtocol =  StatementsWorker()
     
-    var worker: StatementsWorkerProtocol?
-    
-    init() {
-        worker = StatementsWorker()
-        view = ViewController()
+    init(_ vc: ViewControllerDisplay) {
+        self.view = vc
     }
     
     func get(){
-        worker?.get({ StatementList in
-            self.lista = StatementList
+        worker.get({ StatementList in
             print("sucess interactor)")
-            self.view?.displayStatements(lista: self.lista!)
+            self.view?.displayStatements(lista: StatementList)
         }, { errorMessage in
             print("showMessageError: \(errorMessage)")
         })
