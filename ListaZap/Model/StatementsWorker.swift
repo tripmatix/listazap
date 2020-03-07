@@ -10,11 +10,10 @@ import Foundation
 import Alamofire
 
 protocol StatementsWorkerProtocol {
-    func get(_ onSucess: @escaping (StatementList) -> Void, _ onError: @escaping (String) -> Void)
+    func get(_ onSucess: @escaping ([StatementList]) -> Void, _ onError: @escaping (String) -> Void)
 }
 
 class StatementsWorker: StatementsWorkerProtocol {
-    var list: StatementList?
     
     var apiClient: ApiClient?
     
@@ -22,8 +21,8 @@ class StatementsWorker: StatementsWorkerProtocol {
         apiClient = ApiManager()
     }
     
-    func get(_ onSuccess: @escaping (StatementList) -> Void, _ onError: @escaping (String) -> Void) {
-        
+    func get(_ onSuccess: @escaping ([StatementList]) -> Void, _ onError: @escaping (String) -> Void) {
+        print("worker get")
 //        let params: [String: Any] = [
 //            "user" : "user",
 //            "password" : "password"

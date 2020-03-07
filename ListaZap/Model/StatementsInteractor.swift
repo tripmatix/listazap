@@ -13,21 +13,25 @@ protocol StatementsBusinessLogic {
 }
 
 class StatementsInteractor: StatementsBusinessLogic {
-    var lista: StatementList?
+    
+    var view: ViewControllerDisplay?
+    
+    var lista: [StatementList]?
     
     var worker: StatementsWorkerProtocol?
     
     init() {
         worker = StatementsWorker()
+        view = ViewController()
     }
     
     func get(){
-        print("git2")
         worker?.get({ StatementList in
             self.lista = StatementList
-            print("lista: \(StatementList)")
+            print("sucess interactor)")
+            self.view?.displayStatements(lista: self.lista!)
         }, { errorMessage in
-            print("showMessageError2: \(errorMessage)")
+            print("showMessageError: \(errorMessage)")
         })
     }
 }
